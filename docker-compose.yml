@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./sql/:/docker-entrypoint-initdb.d/
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydatabase
+    ports:
+      - "3306:3306"
+
+  php:
+    build:
+      context: .
+      dockerfile: ./webapp/Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./webapp/:/var/www/html
+    depends_on:
+      - db
