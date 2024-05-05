@@ -12,5 +12,7 @@ cd CloudAssignment
 ```
 sudo docker-compose up
 ```
+go to ```localhost``` in the browser and you will see the webpage
+
 
 ![Screenshot 2024-05-05 070705](https://github.com/0xNayel/2ndCloudAssignment/assets/134365613/bf7bce05-9ef2-473a-a901-0e7f213a1b45)
