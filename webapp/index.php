@@ -37,6 +37,7 @@
     <div class="container">
         <h1>Welcome to Cloud Computing Docker container Project</h1>
         <p>Click <a href="team.php">here</a> to view our team data.</p>
+        <br>This is open source software but the copyright belongs to 0xNayel
     </div>
 </body>
 </html>
